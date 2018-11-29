@@ -2,11 +2,16 @@
 1. `virtualenv -p python3 env`
 2. `source env/bin/activate`
 3. `pip install -r requirements.txt`
-4. `docker run --rm -it -p 8081:80 vulnerables/web-dvwa`
 
 ### RCE
-`python rce/run.sh`
+1. `docker run --rm -it -p 8081:80 vulnerables/web-dvwa`
+2. `python rce/run.sh`
 
 ### SQL-INJECTION
 1. `python sql_injection/run_vulnerable.py` and enter `"""2'); drop table Users; --"""`
 
+### XSS
+1. `php -S localhost:8024`
+2. `/index.php?text=faketitle%20onmouseover=(function(){alert(document.cookie)})();`
+3. Hover special text.
+4. For secure `/index_secure.php?text=faketitle%20onmouseover=(function(){alert(document.cookie)})();`
