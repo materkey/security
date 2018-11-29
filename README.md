@@ -8,7 +8,7 @@
 2. `python rce/run.sh`
 
 ### SQL-INJECTION
-1. `python sql_injection/run_vulnerable.py` and enter `"""2'); drop table Users; --"""`
+1. `python sql-injection/run_vulnerable.py` and enter `"""2'); drop table Users; --"""`
 
 ### XSS
 1. `php -S localhost:8024`
