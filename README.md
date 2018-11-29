@@ -7,5 +7,6 @@
 ### RCE
 `python rce/run.sh`
 
-
+### SQL-INJECTION
+1. `python sql_injection/run_vulnerable.py` and enter `"""2'); drop table Users; --"""`
 
