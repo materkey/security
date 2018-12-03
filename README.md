@@ -4,7 +4,7 @@
 3. `pip install -r requirements.txt`
 
 ### RCE
-1. `docker run --rm -it -p 8081:80 vulnerables/web-dvwa`
+1. `docker run --rm -it -p 8081:80 vulnerables/web-dvwa` and create db in web interface of DVWA.
 2. `python rce/run.sh`
 
 ### SQL-INJECTION
